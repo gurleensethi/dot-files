@@ -1,0 +1,8 @@
+# Experimental remote taskfile
+version: 3
+
+tasks:
+  docker-clean:
+    desc: Clean unused and dangling docker resources.
+    cmds:
+      - docker system prune -f
